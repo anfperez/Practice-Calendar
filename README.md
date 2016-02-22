@@ -1,4 +1,5 @@
-# Practice-Calendar
+# PracticeCalendar
+<p> This was a simple calendar exercise. I was practicing my use of the Active Support gem.
 
 <h2> Technologies Used </h2>
 <ul>
