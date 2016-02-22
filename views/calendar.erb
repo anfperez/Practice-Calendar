@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Monthly Calendar</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	<h1> <center> Today is  <%= @date.to_date.to_s(:long) %> <center> </h1>
+	<table class = "calendar"> 
+		<thead>       
+			<tr>
+			<th> Sunday </th>
+			<th> Monday </th>
+			<th> Tuesday </th>
+			<th> Wednesday </th>
+			<th> Thursday </th>
+			<th> Friday </th>
+			<th> Saturday </th>
+		</thead>
+
+		<tbody>
+			<% (@begin_date..@end_date).to_a.in_groups_of(7).each do |week| %>
+			<tr> 
+				<% week.each do |date| %>
+				<td class = "<%= class_for_date(date) %>">
+					<%= date.day %> 
+					<% if date == DateTime.new(2016,01,18) %>
+					MLK DAY
+				<% end %>
+			</td>
+			<% end %>
+			</tr>
+			<% end %>
+	<td> 
+	</td>
+	 </tbody>
+	</table>
+</body>
+</html>
