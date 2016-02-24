@@ -8,3 +8,6 @@
 <li> Ruby </li>
 <li> Rubygems - Sinatra, Active Support </li>
 </ul>
+
+<h2> Sample Screenshots </h2>
+<img src = "http://i.imgur.com/lGX2eR5.png" alt = "sample">
